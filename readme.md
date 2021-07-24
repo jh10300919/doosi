@@ -1,4 +1,7 @@
 git init --- 폴더에 깃 초기화
+
+git remote add origin 주소
+
 git status --- 지금 상태 확인
 
 내부 저장소 - 서버 저장소
