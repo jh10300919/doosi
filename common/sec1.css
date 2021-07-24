@@ -1,0 +1,292 @@
+#sec1 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#sec1 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+#sec1 {
+    padding-top: 20px;
+    padding-bottom: 5vw;
+
+    position: relative;
+}
+
+#sec1 figure {
+    width: calc(100% - 680px);
+    margin: auto;
+    height: 50vh;
+    position: relative;
+}
+
+#sec1 figure {
+    background-color: white;
+}
+
+#sec1 figure>p {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#sec1 figure figcaption {
+    text-transform: uppercase;
+}
+
+/* 섹션1 메인0 시작*/
+#sec1 .main0 .rotate {
+    position: absolute;
+    right: -5%;
+    width: 10%;
+    bottom: 6vh;
+    height: 5vw;
+}
+
+#sec1 .main0 .rotate p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#sec1 .main0 .rotate p img {
+    width: 100%
+}
+
+#sec1 .main0 .rotate .logo_center {
+    width: 60%;
+}
+
+#sec1 .main0 .rotate .logo_rotate img {
+    animation: rotate infinite linear 50s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sec1 .main0 figcaption {
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+#sec1 .main0 figcaption .text {
+    width: 30vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec1 .main0 figcaption .text_1 {
+    font-size: 32px;
+    padding: 5% 0;
+}
+
+#sec1 .main0 figcaption .text_2 {
+    font-size: 28px;
+}
+
+#sec1 .main0 figcaption .img {
+    width: 16vw;
+    height: 70%;
+    margin-left: 18%;
+    position: relative;
+}
+
+#sec1 .main0 figcaption .img img {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* #sec1 figcaption .text #svg0 {
+    border: 1px solid red;
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+} */
+
+/* 섹션1 메인0 끝 */
+
+/* 섹션1 메인1 시작 */
+.main1 figcaption {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.main1 figcaption .text {
+    height: 60%;
+    width: 40%;
+    padding: 10% 0;
+    text-align: right;
+
+    position: relative;
+}
+
+.main1 figcaption .text p:nth-child(1),
+.main1 figcaption .text p:nth-child(2),
+.main1 figcaption .text p:nth-child(3) {
+    position: relative;
+    z-index: 10;
+}
+
+.main1 figcaption .text .bg {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    width: 200%;
+    height: 200%;
+    opacity: 0.2;
+}
+
+.main1 figcaption .text .bg img {
+    width: 100%;
+}
+
+.main1 figcaption .text p:nth-child(1) {
+    font-size: 20px;
+}
+
+.main1 figcaption .text p:nth-child(3) {
+    font-size: 58px;
+}
+
+.main1 figcaption .img {
+    margin-left: 2vw;
+    width: 40vh;
+    height: 60%;
+    position: relative;
+}
+
+.main1 figcaption .img img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* svg */
+.main1 #svg {
+    border: 1px solid red;
+    position: absolute;
+    width: 180%;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.svg1 svg path {
+    animation: morph1 3.5s infinite linear;
+}
+
+@keyframes morph1 {
+    0% {
+        d: path("M47.8,-54.2C61.5,-45.5,71.8,-30,76.6,-12.1C81.5,5.8,80.8,26,70.1,36.6C59.3,47.1,38.6,48,19.7,55.5C0.9,62.9,-16.1,76.8,-31.9,76.1C-47.7,75.3,-62.3,59.9,-71.4,42.2C-80.4,24.5,-83.9,4.5,-80.4,-14C-76.9,-32.5,-66.5,-49.6,-51.9,-58.1C-37.3,-66.7,-18.7,-66.6,-0.8,-65.7C17.1,-64.7,34.1,-62.8,47.8,-54.2Z");
+    }
+
+    100% {
+        d: path("M33.4,-39.8C42.4,-32.3,48,-20.9,50.6,-8.6C53.2,3.7,52.6,16.9,49.2,33.6C45.7,50.4,39.4,70.7,27.3,75.1C15.2,79.6,-2.7,68.1,-18.7,59C-34.7,49.9,-48.8,43.1,-60.8,31C-72.8,18.8,-82.7,1.2,-81.6,-16C-80.6,-33.3,-68.5,-50.3,-53.1,-56.7C-37.6,-63,-18.8,-58.7,-3.3,-54.8C12.2,-50.9,24.5,-47.3,33.4,-39.8Z");
+    }
+}
+
+.svg2 svg path {
+    animation: morph2 3.5s infinite linear;
+}
+
+@keyframes morph2 {
+    0% {
+        d: path("M33.4,-39.8C42.4,-32.3,48,-20.9,50.6,-8.6C53.2,3.7,52.6,16.9,49.2,33.6C45.7,50.4,39.4,70.7,27.3,75.1C15.2,79.6,-2.7,68.1,-18.7,59C-34.7,49.9,-48.8,43.1,-60.8,31C-72.8,18.8,-82.7,1.2,-81.6,-16C-80.6,-33.3,-68.5,-50.3,-53.1,-56.7C-37.6,-63,-18.8,-58.7,-3.3,-54.8C12.2,-50.9,24.5,-47.3,33.4,-39.8Z");
+    }
+
+    100% {
+        d: path("M44.2,-53C54.3,-44.2,57.5,-27.4,58.8,-11.6C60.1,4.2,59.5,19.1,53.9,33.1C48.2,47.2,37.5,60.3,24,64.5C10.6,68.7,-5.5,64.1,-23.9,59.9C-42.2,55.7,-62.8,51.9,-72.7,39.6C-82.7,27.3,-82,6.5,-75.2,-10C-68.5,-26.6,-55.6,-38.8,-42.1,-47C-28.5,-55.2,-14.3,-59.3,1.4,-61C17,-62.6,34.1,-61.8,44.2,-53Z");
+    }
+}
+
+.svg3 svg path {
+    animation: morph3 3.5s infinite linear;
+}
+
+@keyframes morph3 {
+    0% {
+        d: path("M44.2,-53C54.3,-44.2,57.5,-27.4,58.8,-11.6C60.1,4.2,59.5,19.1,53.9,33.1C48.2,47.2,37.5,60.3,24,64.5C10.6,68.7,-5.5,64.1,-23.9,59.9C-42.2,55.7,-62.8,51.9,-72.7,39.6C-82.7,27.3,-82,6.5,-75.2,-10C-68.5,-26.6,-55.6,-38.8,-42.1,-47C-28.5,-55.2,-14.3,-59.3,1.4,-61C17,-62.6,34.1,-61.8,44.2,-53Z");
+    }
+
+    100% {
+        d: path("M49.4,-56.5C61.8,-48.4,68.3,-30.8,72.2,-12.2C76.1,6.4,77.4,25.9,67.9,36.4C58.5,46.8,38.3,48.2,20.8,52.7C3.3,57.1,-11.5,64.6,-27.8,64C-44.1,63.4,-61.9,54.8,-73.6,39.9C-85.2,25.1,-90.7,4.1,-86.9,-15C-83.1,-34,-70.1,-51,-54,-58.4C-38,-65.8,-19,-63.7,-0.3,-63.4C18.5,-63,36.9,-64.5,49.4,-56.5Z");
+    }
+}
+
+.svg4 svg path {
+    animation: morph4 3.5s infinite linear;
+}
+
+@keyframes morph4 {
+    0% {
+        d: path("M49.4,-56.5C61.8,-48.4,68.3,-30.8,72.2,-12.2C76.1,6.4,77.4,25.9,67.9,36.4C58.5,46.8,38.3,48.2,20.8,52.7C3.3,57.1,-11.5,64.6,-27.8,64C-44.1,63.4,-61.9,54.8,-73.6,39.9C-85.2,25.1,-90.7,4.1,-86.9,-15C-83.1,-34,-70.1,-51,-54,-58.4C-38,-65.8,-19,-63.7,-0.3,-63.4C18.5,-63,36.9,-64.5,49.4,-56.5Z");
+    }
+
+    100% {
+        d: path("M56,-64.2C71.4,-53.9,81.7,-35.1,82.4,-16.7C83.2,1.7,74.2,19.7,62,31.2C49.9,42.7,34.6,47.8,18.7,55.3C2.8,62.8,-13.7,72.8,-30.7,72C-47.7,71.1,-65.2,59.5,-72.5,43.5C-79.8,27.5,-76.8,7.3,-73.3,-13C-69.8,-33.2,-65.8,-53.4,-53.5,-64.3C-41.2,-75.2,-20.6,-76.8,-0.1,-76.6C20.3,-76.5,40.7,-74.6,56,-64.2Z");
+    }
+}
+    .svg5 svg path {
+        animation: morph5 3.5s infinite linear;
+    }
+
+    @keyframes morph5 {
+        0% {
+            d: path("M56,-64.2C71.4,-53.9,81.7,-35.1,82.4,-16.7C83.2,1.7,74.2,19.7,62,31.2C49.9,42.7,34.6,47.8,18.7,55.3C2.8,62.8,-13.7,72.8,-30.7,72C-47.7,71.1,-65.2,59.5,-72.5,43.5C-79.8,27.5,-76.8,7.3,-73.3,-13C-69.8,-33.2,-65.8,-53.4,-53.5,-64.3C-41.2,-75.2,-20.6,-76.8,-0.1,-76.6C20.3,-76.5,40.7,-74.6,56,-64.2Z");
+        }
+
+        100% {
+            d: path("M47.8,-54.2C61.5,-45.5,71.8,-30,76.6,-12.1C81.5,5.8,80.8,26,70.1,36.6C59.3,47.1,38.6,48,19.7,55.5C0.9,62.9,-16.1,76.8,-31.9,76.1C-47.7,75.3,-62.3,59.9,-71.4,42.2C-80.4,24.5,-83.9,4.5,-80.4,-14C-76.9,-32.5,-66.5,-49.6,-51.9,-58.1C-37.3,-66.7,-18.7,-66.6,-0.8,-65.7C17.1,-64.7,34.1,-62.8,47.8,-54.2Z");
+        }
+    }
+
+    /*  */
+    /* 섹션1 메인1 끝 */
+    /* 왼쪽 도트 */
+    #sec1 .swiper-pagination {
+        position: absolute;
+        border: 1px solid red;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        text-align: center;
+        transition: 300ms opacity;
+        z-index: 10;
+    }

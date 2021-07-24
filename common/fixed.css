@@ -1,0 +1,256 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    font-family: 'GmarketSansLight';
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 30px;
+    --main-color1 : #84614c;
+    --main-color2 : #d0a184;
+    --main-color3 : #ffe1af;
+
+    --sub-color1 : #e2e2e2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a {text-decoration: none;
+    color: black;}
+ul,li {list-style: none;}
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    border: 3px solid black;
+    margin: auto;
+}
+#sec1::before {
+    position: absolute;
+    content: "";
+    
+    display: block;
+    /* border: 1px solid red; */
+    width: 864px;
+    height: 814px;
+    top: 0px;
+    z-index: 10;
+}
+#sec1::after {
+    position: absolute;
+    content: "";
+
+    background: url(../img/tag2.png) no-repeat;
+    background-size: contain ;
+}
+/* header 시작 */
+header {
+    /* border: 1px solid green; */
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(#f9f9f9,white);
+    z-index: 100;
+
+    position: sticky;
+    top: -110px;
+}
+nav {
+    /* border: 1px dotted red; */
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 150px;
+    /* 높이 조절 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+nav div {
+    position: absolute;
+    width: 100%;
+}
+
+nav .logo {
+    /* border: 1px solid red; */
+    left: 50%;
+    top: -120px;
+    transform: translateX(-50%);
+    width: 150px;
+}
+nav .logo img {
+    width: 100%;
+}
+nav .logo::after{
+    content: "일상의 여유,";
+    left: -50px;
+    font-size: 28px;
+    position: absolute;
+    left: -130px;
+}
+nav .login {
+    /* border: 1px solid red; */
+    max-width: calc(100% - 680px);
+    top: -120px;
+    left: 50%; transform: translateX(-50%);
+    text-align: right;
+    font-size: 18px;
+}
+.login a {
+    color: #8f8f8f;
+}
+.login a::after {
+    content: "|";
+    padding: 0 10px;
+}
+.login a:nth-of-type(3)::after{
+    display: none;
+}
+/* 스크롤시 사라지는 부분 끝 */
+
+/* gnb 시작 */
+nav .wrap_gnb {
+    /* border: 1px solid red; */
+    max-width: calc(100% - 680px);
+    left: 50%; transform: translateX(-50%);
+}
+.gnb {
+    /* border: 1px solid blue; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.gnb>li {
+    /* border: 1px dotted blue; */
+    margin: 0px 0;
+
+    text-align: center;
+    position: relative;
+
+    z-index: 10;
+}
+.top_icon,
+.top_icon span,
+.top_icon span a {
+    display: flex;
+    align-items: center;
+}
+.top_icon span a {
+    color: var(--main-color2);
+    justify-content: center;
+    align-items: center;
+}
+.top_icon span a img {
+    width: 80%;
+}
+.top_icon span:nth-of-type(2){
+    padding-left: 10px;
+}
+/* 서브 메뉴 시작 */
+.gnb li .sub {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    height: 0px;
+    margin-top: 5px;
+    color: var(--main-color1);
+
+    overflow: hidden;
+    transition: .3s;
+}
+.gnb li:hover .sub{
+    height: 210px;
+}
+.gnb li .sub li a{
+    /* border: 1px solid blue; */
+    padding: 10px 10px;
+    background-color: rgba(255,255,255,0.9);
+    /* background-color: lightgreen; */
+    white-space: nowrap;
+    display: block;
+    color: var(--main-color);
+    transition: .3s;
+}
+.gnb li .sub li:hover a {
+    background-color: var(--main-color2);
+    color: white;
+}
+/* 서브 메뉴 끝 */
+
+/* 사이드 도트 시작 */
+.side_dot {
+    z-index: 100;
+    position: fixed;
+    right: 10%;
+    top: 50%; transform: translateY(-50%);
+}
+.side_dot a {
+    display: flex;
+    border: 1px solid var(--main-color2);
+    background-color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 50%;
+    width: 10px; height: 10px;
+}
+.side_dot a.on {
+    background-color: var(--main-color2);
+}
+/* 사이드 도트 끝 */
+/* 하단 영역 */
+footer {
+    background-color: var(--main-color1);
+    height: 150px;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div {
+    display: flex;
+}
+footer div a {
+    position: relative;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+footer div a img {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+footer div a:nth-of-type(3) img {
+    width: 45px;
+}
+/* 사이드 sns 아이콘 */
+.side_sns {
+    position: fixed;
+    top: 75%;
+    right: 30px;
+
+}
+
