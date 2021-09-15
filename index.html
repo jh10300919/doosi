@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./common/main.css"> -->
-    <link rel="stylesheet" href="./common/fixed.css">
-    <link rel="stylesheet" href="./common/sec1.css">
-    <link rel="stylesheet" href="./common/sec2.css">
-    <link rel="stylesheet" href="./common/sec3.css">
-    <link rel="stylesheet" href="./common/sec4.css">
-    <link rel="stylesheet" href="./common/sec5.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./common/fixed.css">
+    <link rel="stylesheet" href="./common/common.css">
+    <link rel="stylesheet" href="./common/media.css">
+
+    <!-- swiper.min.css랑 같은거 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./common/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="./common/common.js"></script>
 </head>
 
@@ -91,70 +90,75 @@
     </div>
 
     <section id="sec1">
-        <article class="swiper-container mySwiper">
+        <article class="swiper-container mySwiper1">
             <div class="swiper-wrapper">
+                <!-- 반복 -->
                 <div class="swiper-slide">
                     <figure class="main0">
-                        <p class="title">두시</p>
-                        <div class="rotate">
-                            <p class="logo_center"><img src="./img/logo.png" alt="중심"></p>
-                            <p class="logo_rotate"><img src="./img/logo2.svg" alt="돌아감"></p>
-                        </div>
                         <figcaption>
+                            <div class="rotate">
+                                <p class="logo_center"><img src="./img/logo.png" alt="중심"></p>
+                                <p class="logo_rotate"><img src="./img/logo2.svg" alt="돌아감"></p>
+                            </div>
                             <div class="img"><img src="./img/illust.png" alt="이미지"></img></div>
                             <div class="text">
                                 <p class="text_1">새로운 라이프스타일, 브랜드 두시</p>
                                 <p class="text_2">꽃이 아닌 경험을 선도합니다<br>누구나 함께 즐길 수 있는 꽃 문화 두시, 함께 나눠요</p>
-                                <div id="svg0" class="svg1">
-                                    <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#FF0066"
-                                            d="M47.8,-54.2C61.5,-45.5,71.8,-30,76.6,-12.1C81.5,5.8,80.8,26,70.1,36.6C59.3,47.1,38.6,48,19.7,55.5C0.9,62.9,-16.1,76.8,-31.9,76.1C-47.7,75.3,-62.3,59.9,-71.4,42.2C-80.4,24.5,-83.9,4.5,-80.4,-14C-76.9,-32.5,-66.5,-49.6,-51.9,-58.1C-37.3,-66.7,-18.7,-66.6,-0.8,-65.7C17.1,-64.7,34.1,-62.8,47.8,-54.2Z"
-                                            transform="translate(100 100)" />
-                                    </svg> -->
-                                </div>
-                            </div>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- 반복 -->
                 <div class="swiper-slide">
                     <figure class="main1">
-                        <p>명화</p>
                         <figcaption>
                             <div class="text">
                                 <p>테마 정기구독</p>
                                 <p>명화 [masterpiece]</p>
                                 <p>'모네'</p>
+                                <!--  -->
                                 <div id="svg" class="svg2">
                                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#FF0066"
-                                            d="M33.4,-39.8C42.4,-32.3,48,-20.9,50.6,-8.6C53.2,3.7,52.6,16.9,49.2,33.6C45.7,50.4,39.4,70.7,27.3,75.1C15.2,79.6,-2.7,68.1,-18.7,59C-34.7,49.9,-48.8,43.1,-60.8,31C-72.8,18.8,-82.7,1.2,-81.6,-16C-80.6,-33.3,-68.5,-50.3,-53.1,-56.7C-37.6,-63,-18.8,-58.7,-3.3,-54.8C12.2,-50.9,24.5,-47.3,33.4,-39.8Z"
-                                            transform="translate(100 100)" />
+                                        <defs>
+                                            <mask id="shape-mask">
+                                                <path fill="#FF0066"
+                                                    d="M33.4,-39.8C42.4,-32.3,48,-20.9,50.6,-8.6C53.2,3.7,52.6,16.9,49.2,33.6C45.7,50.4,39.4,70.7,27.3,75.1C15.2,79.6,-2.7,68.1,-18.7,59C-34.7,49.9,-48.8,43.1,-60.8,31C-72.8,18.8,-82.7,1.2,-81.6,-16C-80.6,-33.3,-68.5,-50.3,-53.1,-56.7C-37.6,-63,-18.8,-58.7,-3.3,-54.8C12.2,-50.9,24.5,-47.3,33.4,-39.8Z"
+                                                    transform="translate(100 100)" />
+                                            </mask>
+
+                                        </defs>
+                                        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="./img/bg1.png" mask="url(#shape-mask)" id="img1"></image>
                                     </svg>
                                 </div>
-                                <p class="bg"><img src="./img/bg1.png" alt="배경이미지"></p>
                             </div>
                             <div class="img"><img src="./img/main_1.png" alt="꽃1"></div>
+                            <!--  -->
                         </figcaption>
                     </figure>
                 </div>
-                <!-- 반복 -->
                 <div class="swiper-slide">
                     <figure class="main1">
-                        <p>프로방스</p>
                         <figcaption>
                             <div class="text">
                                 <p>테마 정기구독</p>
                                 <p>프로방스 [provence]</p>
                                 <p>'지중해'</p>
-                                <div id="svg" class="svg3">
+
+                                <div id="svg" class="svg2">
                                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#FF0066"
-                                            d="M44.2,-53C54.3,-44.2,57.5,-27.4,58.8,-11.6C60.1,4.2,59.5,19.1,53.9,33.1C48.2,47.2,37.5,60.3,24,64.5C10.6,68.7,-5.5,64.1,-23.9,59.9C-42.2,55.7,-62.8,51.9,-72.7,39.6C-82.7,27.3,-82,6.5,-75.2,-10C-68.5,-26.6,-55.6,-38.8,-42.1,-47C-28.5,-55.2,-14.3,-59.3,1.4,-61C17,-62.6,34.1,-61.8,44.2,-53Z"
-                                            transform="translate(100 100)" />
+                                        <defs>
+                                            <mask id="shape-mask">
+                                                <path fill="#FF0066"
+                                                    d="M44.2,-53C54.3,-44.2,57.5,-27.4,58.8,-11.6C60.1,4.2,59.5,19.1,53.9,33.1C48.2,47.2,37.5,60.3,24,64.5C10.6,68.7,-5.5,64.1,-23.9,59.9C-42.2,55.7,-62.8,51.9,-72.7,39.6C-82.7,27.3,-82,6.5,-75.2,-10C-68.5,-26.6,-55.6,-38.8,-42.1,-47C-28.5,-55.2,-14.3,-59.3,1.4,-61C17,-62.6,34.1,-61.8,44.2,-53Z"
+                                                    transform="translate(100 100)" />
+                                            </mask>
+
+                                        </defs>
+                                        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="./img/bg2.png" mask="url(#shape-mask)" id="img2"></image>
                                     </svg>
                                 </div>
-                                <p class="bg"><img src="./img/bg2.png" alt="배경이미지"></p>
+
                             </div>
                             <div class="img"><img src="./img/main_2.png" alt="꽃2"></div>
                         </figcaption>
@@ -162,20 +166,25 @@
                 </div>
                 <div class="swiper-slide">
                     <figure class="main1">
-                        <p>도시</p>
                         <figcaption>
                             <div class="text">
                                 <p>테마 정기구독</p>
                                 <p>도시 [city]</p>
                                 <p>'뉴욕'</p>
-                                <div id="svg" class="svg4">
+                                <div id="svg" class="svg3">
                                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#FF0066"
-                                            d="M49.4,-56.5C61.8,-48.4,68.3,-30.8,72.2,-12.2C76.1,6.4,77.4,25.9,67.9,36.4C58.5,46.8,38.3,48.2,20.8,52.7C3.3,57.1,-11.5,64.6,-27.8,64C-44.1,63.4,-61.9,54.8,-73.6,39.9C-85.2,25.1,-90.7,4.1,-86.9,-15C-83.1,-34,-70.1,-51,-54,-58.4C-38,-65.8,-19,-63.7,-0.3,-63.4C18.5,-63,36.9,-64.5,49.4,-56.5Z"
-                                            transform="translate(100 100)" />
+                                        <defs>
+                                            <mask id="shape-mask">
+                                                <path fill="#FF0066"
+                                                    d="M49.4,-56.5C61.8,-48.4,68.3,-30.8,72.2,-12.2C76.1,6.4,77.4,25.9,67.9,36.4C58.5,46.8,38.3,48.2,20.8,52.7C3.3,57.1,-11.5,64.6,-27.8,64C-44.1,63.4,-61.9,54.8,-73.6,39.9C-85.2,25.1,-90.7,4.1,-86.9,-15C-83.1,-34,-70.1,-51,-54,-58.4C-38,-65.8,-19,-63.7,-0.3,-63.4C18.5,-63,36.9,-64.5,49.4,-56.5Z"
+                                                    transform="translate(100 100)" />
+                                            </mask>
+
+                                        </defs>
+                                        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="./img/bg3.png" mask="url(#shape-mask)" id="img3"></image>
                                     </svg>
                                 </div>
-                                <p class="bg"><img src="./img/bg3.png" alt="배경이미지"></p>
                             </div>
                             <div class="img"><img src="./img/main_3.png" alt="꽃3"></div>
                         </figcaption>
@@ -183,27 +192,32 @@
                 </div>
                 <div class="swiper-slide">
                     <figure class="main1">
-                        <p>자연</p>
                         <figcaption>
                             <div class="text">
                                 <p>테마 정기구독</p>
                                 <p>자연 [nature]</p>
                                 <p>'바다'</p>
-                                <div id="svg" class="svg5">
+                                <div id="svg" class="svg4">
                                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#FF0066"
+                                        <defs>
+                                            <mask id="shape-mask">
+                                                <path fill="#FF0066"
                                             d="M56,-64.2C71.4,-53.9,81.7,-35.1,82.4,-16.7C83.2,1.7,74.2,19.7,62,31.2C49.9,42.7,34.6,47.8,18.7,55.3C2.8,62.8,-13.7,72.8,-30.7,72C-47.7,71.1,-65.2,59.5,-72.5,43.5C-79.8,27.5,-76.8,7.3,-73.3,-13C-69.8,-33.2,-65.8,-53.4,-53.5,-64.3C-41.2,-75.2,-20.6,-76.8,-0.1,-76.6C20.3,-76.5,40.7,-74.6,56,-64.2Z"
                                             transform="translate(100 100)" />
+                                            </mask>
+
+                                        </defs>
+                                        <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="./img/bg4.png" mask="url(#shape-mask)" id="img4"></image>
                                     </svg>
                                 </div>
-                                <p class="bg"><img src="./img/bg4.png" alt="배경이미지"></p>
                             </div>
                             <div class="img"><img src="./img/main_4.png" alt="꽃4"></div>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
                 <div class="swiper-pagination"></div>
             </div>
         </article>
@@ -218,29 +232,29 @@
                         <p>일상 Size S<br>네다섯 송이의 꽃다발<br>플라워라이프를 시작하기에 좋은 크기</p>
                     </div>
                     <div class="hov_inner">
-                        <a href="#"></a>
+                        <a href="#">자세히보기</a>
                         <p class="title">daily</p>
                         <div class="circle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
                         </div>
                         <div class="img"><img src="./img/S.png" alt="데일리"></div>
                     </div>
                 </figure>
                 <figure class="hov">
-                    <div class="text">
+                    <div class="text on">
                         <p>설렘 Size M<br>여섯종류 이상의 다양한 꽃으로 구성된 꽃다발<br>딱 좋은 크기의 꽃으로 구성되어있어요</p>
                     </div>
-                    <div class="hov_inner">
-                        <a href="#"></a>
+                    <div class="hov_inner on">
+                        <a href="#">자세히보기</a>
                         <p class="title">romance</p>
                         <div class="circle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
                         </div>
                         <div class="img"><img src="./img/M.png" alt="설렘"></div>
                     </div>
@@ -250,13 +264,13 @@
                         <p>한아름 Size L<br>풍성한 크기의 꽃으로 구성된 꽃다발<br>선물로도 제격입니다</p>
                     </div>
                     <div class="hov_inner">
-                        <a href="#"></a>
+                        <a href="#">자세히보기</a>
                         <p class="title">full moon</p>
                         <div class="circle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
+                            <span>a</span>
                         </div>
                         <div class="img"><img src="./img/L.png" alt="한아름"></div>
                     </div>
@@ -266,115 +280,156 @@
     </section>
     <section id="sec3">
         <article class="inner3">
-            <div>
-                <h1>Florist’s Tip 꽃을 오래보는 방법</h1>
-                <ul class="tip">
-                    <li>
-                        <p>플로랄 폼을 제거하고<br>꽃의 줄기 끝을 2cm정도<br>사선으로 잘라<br>물 흡수면적을 넓혀주세요</p>
-                        <p class="tip_img1"><img src="./img/tip1.png" alt=""></p>
-                    </li>
-                    <li>
-                        <p>시원한 수돗물이 담긴<br>화병을 준비하세요<br>락스 두 방울을 넣으면<br>꽃의 세균을 막아줍니다</p>
-                        <p class="tip_img2"><img src="./img/tip2.png" alt=""></p>
-                    </li>
-                    <li>
-                        <p>직사광선을 피해<br>서늘한 곳에 두고<br>바라보세요<br></p>
-                        <p class="tip_img3"><img src="./img/tip3.png" alt=""></p>
-                    </li>
-                </ul>
-            </div>
+            <h1>Florist’s Tip 꽃을 오래보는 방법</h1>
+            <ul class="tip">
+                <li>
+                    <p>플로랄 폼을 제거하고<br>꽃의 줄기 끝을 2cm정도<br>사선으로 잘라<br>물 흡수면적을 넓혀주세요</p>
+                    <p class="tip_img img1"><img src="./img/tip1.png" alt=""></p>
+                </li>
+                <li>
+                    <p>시원한 수돗물이 담긴<br>화병을 준비하세요<br>락스 두 방울을 넣으면<br>꽃의 세균을 막아줍니다</p>
+                    <p class="tip_img img2"><img src="./img/tip2.png" alt=""></p>
+                </li>
+                <li>
+                    <p>직사광선을 피해<br>서늘한 곳에 두고<br>바라보세요<br></p>
+                    <p class="tip_img img3"><img src="./img/tip3.png" alt=""></p>
+                </li>
+            </ul>
         </article>
     </section>
     <section id="sec4">
         <article class="inner4">
             <h1>두시의 꽃</h1>
-            <!-- 꽃다발 탭 -->
-            <div class="tap_flower">
+            <div class="tap_menu">
                 <p class="flower">꽃다발</p>
+                <p class="plant">식물</p>
                 <p class="more"><a href="#">전체보러가기></a></p>
-
-                <div class="Flower_slide">
-                    <div class="slide_con">
-                        <ul class="slide_list">
-                            <li class="item">
-                                <p class="item_img"><img src="" alt="이미지"></p>
-                                <p class="item_title">제목</p>
-                                <p class="item_title">내용</p>
-                                <a href="#">자세히보기</a>
-                            </li>
-                            <li class="item">
-                                <p class="item_img"><img src="" alt="이미지"></p>
-                                <p class="item_title">제목</p>
-                                <p class="item_title">내용</p>
-                                <a href="#">자세히보기</a>
-                            </li>
-                            <li class="item">
-                                <p class="item_img"><img src="" alt="이미지"></p>
-                                <p class="item_title">제목</p>
-                                <p class="item_title">내용</p>
-                                <a href="#">자세히보기</a>
-                            </li>
-                            <li class="item">
-                                <p class="item_img"><img src="" alt="이미지"></p>
-                                <p class="item_title">제목</p>
-                                <p class="item_title">내용</p>
-                                <a href="#">자세히보기</a>
-                            </li>
-                            <li class="item">
-                                <p class="item_img"><img src="" alt="이미지"></p>
-                                <p class="item_title">제목</p>
-                                <p class="item_title">내용</p>
-                                <a href="#">자세히보기</a>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <!-- 꽃다발 탭 -->
+            <div class="sec4_F_slide">
+                <div class="swiper-container mySwiper2">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide item on">
+                            <p class="item_img on"><img src="./img/sub_1.png" alt="이미지1"></p>
+                            <p class="item_title">그리너리 샐러드</p>
+                            <p class="item_detail">36,900원</p>
+                            <p class="item_detail2 on">26,500원</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/sub_2.png" alt="이미지3"></p>
+                            <p class="item_title">펌킨파이</p>
+                            <p class="item_detail">36,900원</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/sub_3.png" alt="이미지3"></p>
+                            <p class="item_title">블루 자스민</p>
+                            <p class="item_detail">28,500원</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/sub_4.png" alt="이미지4"></p>
+                            <p class="item_title">메리골드</p>
+                            <p class="item_detail">28,500원</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/sub_5.png" alt="이미지5"></p>
+                            <p class="item_title">로즈잼</p>
+                            <p class="item_detail">28,500원</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                    </ul>
                 </div>
-
-
-
-
-                <!-- 식물 탭 -->
-
+            </div>
+            <!-- 식물 탭 -->
+            <div class="sec4_P_slide">
+                <div class="swiper-container mySwiper3">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide item on">
+                            <p class="item_img on"><img src="./img/plant1.png" alt="이미지식물"></p>
+                            <p class="item_title">상품제목</p>
+                            <p class="item_detail">상품 상세내용</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/plant2.png" alt="이미지2"></p>
+                            <p class="item_title">상품제목</p>
+                            <p class="item_detail">상품 상세내용</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/plant3.png" alt="이미지3"></p>
+                            <p class="item_title">상품제목</p>
+                            <p class="item_detail">상품 상세내용</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/plant4.png" alt="이미지4"></p>
+                            <p class="item_title">상품제목</p>
+                            <p class="item_detail">상품 상세내용</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                        <li class="swiper-slide item">
+                            <p class="item_img"><img src="./img/plant5.png" alt="이미지5"></p>
+                            <p class="item_title">상품제목</p>
+                            <p class="item_detail">상품 상세내용</p>
+                            <p class="item_detail2">할인가격</p>
+                            <a class="item_link" href="#">자세히보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </article>
     </section>
     <section id="sec5">
         <h1>플라워 클래스</h1>
         <article class="inner5">
-            <!-- <div>
-                <div>
-                    <p class="class_title">원데이</p>
-                    <figure>
-                        <div><img src="./img/oneday.png" alt="원데이"></div>
-                        <figcaption class="class_text">플라워 클래스를<br>가볍게 들으시는 분에게<br>추천합니다</figcaption>
-                    </figure>
-                    <a href="#">자세히보기</a>
-                </div>
-                <div>
-                    <p class="class_title">취미</p>
-                    <figure>
-                        <div><img src="./img/hobby.png" alt="취미"></div>
-                        <figcaption class="class_text">총 4회 과정으로<br>플라워박스, 화병꽂이,<br>핸드타이드, 리스를<br>배우는 수업입니다</figcaption>
-                    </figure>
-                    <a href="#">자세히보기</a>
-                </div>
-                <div>
-                    <figure>
-                        <figcaption>
-                            <p class="class_title">마스터</p>
-                            <div><img src="" alt="마스터"></div>
-                            <p class="class_text">플로리스트 창업을<br>원하는 분을 위한 클래스로<br>이론과 실기가 병행됩니다</p>
-                        </figcaption>
-                    </figure>
-                    <a href="#">자세히보기</a>
-                </div>
-            </div> -->
-            내용이 들어갑니다
+            <figure>
+                <a href="#">자세히보기</a>
+                <figcaption>
+                    <p class="title">원데이</p>
+                    <div class="img">
+                        <div class="wrap"><img src="./img/oneday.png" alt="이미지"></div>
+                    </div>
+                    <p class="txt">플라워 클래스를<br>가볍게 들으시는 분에게<br>추천합니다</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="#">자세히보기</a>
+                <figcaption>
+                    <p class="title">취미</p>
+                    <div class="img">
+                        <div class="wrap"><img src="./img/hobby.png" alt="이미지"></div>
+                    </div>
+                    <p class="txt">총 4회 과정으로<br>플라워박스, 화병꽂이,<br>핸드타이드, 리스를<br>배우는 수업입니다</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="#">자세히보기</a>
+                <figcaption>
+                    <p class="title">마스터</p>
+                    <div class="img">
+                        <div class="wrap"><img src="./img/master.png" alt="이미지"></div>
+                    </div>
+                    <p class="txt">플로리스트 창업을<br>원하는 분을 위한 클래스로<br>이론과 실기가 병행됩니다</p>
+                </figcaption>
+            </figure>
         </article>
     </section>
     <footer>
         <p>카피라이트<br>카피라이트<br>카피라이트</p>
         <p>카피라이트<br>카피라이트<br>카피라이트</p>
-        <p>카피라이트<br>카피라이트<br>카피라이트</p>
+        <p>한줄 카피 라이트</p>
         <p>카피라이트<br>카피라이트</p>
         <div>
             <a href="#"><img src="./img/instar.png" alt=""></a>

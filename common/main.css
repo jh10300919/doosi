@@ -30,6 +30,9 @@
     box-sizing: border-box;
 
 }
+body {
+    overflow-x: hidden;
+}
 a {text-decoration: none;
     color: black;}
 ul,li {list-style: none;}
@@ -347,7 +350,7 @@ footer div a:nth-of-type(3) img {
 /* 섹션 2 시작 */
 #sec2 {
     /* border: 1px solid blue; */
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 150px;
     margin-top: 150px;
     
@@ -421,16 +424,18 @@ footer div a:nth-of-type(3) img {
     margin: auto;
 }
 .hover {
+    border:1px solid red;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
     height: 100%;
     position: relative;
+    z-index: 100;
 }
 .hov {
     width: calc(100% / 4 - 10px);
     height: 55%;
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
 }
 .hov .text {
     /* 텍스트 박스 높이 */
@@ -680,6 +685,10 @@ footer div a:nth-of-type(3) img {
     font-family: 'GmarketSansLight';
     font-size: 20px;
     top: 60px;
+}
+
+.sec4_F_slide, .sec4_P_slide {
+    display: none;
 }
 
 /*  */

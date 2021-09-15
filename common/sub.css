@@ -1,0 +1,240 @@
+.sec1{
+    margin-top: 8vw;
+    text-align: center;
+
+}
+.sec2 {
+    margin-top: 5vw;
+    text-align: center;
+
+}
+h1 {
+    display: inline-block;
+    margin: 3vw;
+    border-top: 1px solid grey;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding: 30px 15px
+}
+
+.title {
+    position: relative;
+}
+
+.bg {
+    padding: 5vw 0;
+    background: url(../img/sub/sub_bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: transparent;
+    position: relative;
+}
+
+.bg::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.title .txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.txt p:nth-of-type(1) {
+    font-size: 48px;
+    padding-bottom: 1vw;
+}
+
+/* 바뀌는 부분 시작 */
+
+.sec2 .title {
+    z-index: 10;
+    cursor: pointer;
+    color: var(--main-color1);
+    position: absolute;
+    display: inline-block;
+}
+.sec2 article:nth-of-type(1) .title {
+    left: 35%;
+}
+.sec2 article:nth-of-type(2) .title {
+    left: 45%;
+}
+.sec2 article:nth-of-type(3) .title {
+    left: 55%;
+}
+.sec2 article:nth-of-type(4) .title {
+    left: 65%;
+}
+.sec2 .title::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    border: 1px solid transparent;
+    left: 0%; top: -30%;
+    transition: .3s;
+}
+.sec2 .title.on::after {
+    width: 100%;
+    border: 1px solid var(--main-color2);
+
+}
+.sec2 {
+    padding-bottom: 65vw;
+}
+.sec2 article {
+    width: 100vw;
+    position: absolute;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 0 5vw;
+}
+figure {
+    padding-top: 5vw;
+    opacity: 0;
+
+    transition: .3s;
+}
+figure.on {
+    opacity: 1;
+}
+figure figcaption .sub_main {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+.sub_main .img,
+.sub_main .text {
+    /* border: 1px solid red; */
+    height: 10vw;
+    flex: 1;
+}
+
+.sub_main .img {
+    position: relative;
+    padding-bottom: 25vw;
+}
+
+.sub_main .img img {
+    position: absolute;
+    width: 80%;
+    left: 50%; transform: translateX(-50%);
+    top: 0%;
+}
+
+.sub_main .text {
+    padding: 3vw 0 0 3vw;
+    text-align: left;
+}
+
+.sub_main .text p:nth-of-type(1) {
+    font-size: 48px;
+    padding-bottom: 2vw;
+}
+.sub_main .text p:nth-of-type(2) {
+    font-size: 24px;
+    color: rgb(122, 122, 122);
+}
+.link {
+    position: absolute;
+    font-family: 'GmarketSansLight';
+    font-size: 18px;
+    right: 5%;
+    bottom: 10%;
+    padding: 5px;
+}
+.link a {
+    color: var(--main-color1);
+}
+
+/* 밑에 시작 */
+.sub_sub {
+    padding: 2vw 0;
+    width: 80%;
+    height: 25vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.sub_sub::after {
+    position: absolute;
+    content: "";
+    width: 200%; height: 25vw;
+    left: 50%; transform: translateX(-50%);
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: -1;
+}
+.sub_sub>div {
+    flex: 1;
+}
+.sub_sub>div>p {
+    padding: 1vw 0;
+}
+.sub_sub .img {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding-bottom: 13vw;
+}
+.sub_sub .img img {
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    width: 100%;
+}
+/* 밑에 끝 */
+/* 히스토리 시작 */
+.sec3 {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
+.sec3 h1 {
+    display: inline-block;
+    border-top: 1px solid grey;
+    padding: 15px 30px;
+}
+.sec3>div>a {
+    font-family: 'GmarketSansLight';
+    font-size: 24px;
+    color: var(--main-color1);
+}
+.sec3 article {
+    margin-top: 15px;
+}
+.sec3 .pic {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.sec3 .pic div {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 15vw;
+    margin: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+.sec3 .pic div img {
+    position: absolute;
+    width: 100%;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}

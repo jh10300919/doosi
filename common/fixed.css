@@ -35,33 +35,14 @@ a {text-decoration: none;
 ul,li {list-style: none;}
 html,
 body {
+    /* background-color: lightslategray; */
     position: relative;
     height: 100%;
+    z-index: -1;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
-}
-section {
-    border: 3px solid black;
-    margin: auto;
-}
-#sec1::before {
-    position: absolute;
-    content: "";
-    
-    display: block;
-    /* border: 1px solid red; */
-    width: 864px;
-    height: 814px;
-    top: 0px;
-    z-index: 10;
-}
-#sec1::after {
-    position: absolute;
-    content: "";
-
-    background: url(../img/tag2.png) no-repeat;
-    background-size: contain ;
 }
 /* header 시작 */
 header {
@@ -90,11 +71,16 @@ nav div {
     position: absolute;
     width: 100%;
 }
-
+.top {
+    height: 100%;
+}
+.wrap_gnb {
+    /* border: 1px solid red; */
+}
 nav .logo {
     /* border: 1px solid red; */
     left: 50%;
-    top: -120px;
+    top: 20px;
     transform: translateX(-50%);
     width: 150px;
 }
@@ -109,9 +95,8 @@ nav .logo::after{
     left: -130px;
 }
 nav .login {
-    /* border: 1px solid red; */
     max-width: calc(100% - 680px);
-    top: -120px;
+    top: 20px;
     left: 50%; transform: translateX(-50%);
     text-align: right;
     font-size: 18px;
@@ -227,7 +212,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: relative;
 }
+
 footer div {
     display: flex;
 }
