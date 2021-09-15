@@ -838,7 +838,13 @@ html, body {
     color: rgb(175, 175, 175);
     opacity: 1;
 }
-
+.item_link {
+    color: transparent;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* 섹션 4 끝 */
 /* 섹션 5 시작 */
 #sec5 {
