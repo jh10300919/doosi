@@ -41,21 +41,25 @@ $(() => {
   })
 
   // 섹션 1 메인 슬라이드
+  var bullet = ['두시', '명화', '프로방스','도시','자연'];
   var swiper1 = new Swiper(".mySwiper1", {
     // spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      // delay: 2500,
       disableOnInteraction: false,
     },
     effect: "fade",
     loop: true,
     navigation: {
     },
+    grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-
+      renderBullet: function (index, className) {
+        return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
+      }
     },
   });
 
@@ -152,7 +156,7 @@ $(() => {
   swiper3.on('slideChange', function () {
     let center = swiper3.activeIndex + 2;
     let pre = swiper3.previousIndex + 2;
-    console.log('p', center);
+    // console.log('p', center);
 
     $('.plant_item').eq(center).addClass('on');
     $('.plant_item').eq(center).children('.item_img').addClass('on');

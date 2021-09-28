@@ -1,7 +1,8 @@
-
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
+
 #sec1 {
     padding-top: 20px;
     padding-bottom: 5vw;
@@ -26,6 +27,7 @@ html, body {
     left: 0;
     transform: translateY(-35%);
 }
+
 /* 메뉴 */
 
 /* 섹션1 메인0 시작*/
@@ -34,10 +36,13 @@ html, body {
     content: "";
     background: url(../img/tag1.png) no-repeat left;
     background-size: contain;
-    width: 100%; height: 120%;
-    top:-20%; left: 0%;
+    width: 100%;
+    height: 120%;
+    top: -20%;
+    left: 0%;
     z-index: 1;
 }
+
 .rotate {
     z-index: 10;
     position: absolute;
@@ -195,17 +200,21 @@ html, body {
     left: 85%;
     transform: translate(-50%, -50%);
 }
+
 .main0 .text {
 
     position: relative;
 }
+
 .main0 svg {
     position: absolute;
     width: 25vw;
-    top: -30%; left: -50%;
+    top: -30%;
+    left: -50%;
     z-index: 0;
 
 }
+
 .svg1 svg path {
     animation: morph1 3.5s infinite linear alternate;
 }
@@ -284,7 +293,7 @@ html, body {
     left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    height: 15%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -292,6 +301,31 @@ html, body {
     text-align: center;
     transition: 300ms opacity;
     z-index: 10;
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.swiper-pagination-bullet {
+    width: 100%;
+    min-height: 30px;
+    background: transparent;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid pink;
+    transition: all .5 ease-in-out;
 }
 
 #sec1 .swiper-slide {
@@ -314,23 +348,28 @@ html, body {
 
     z-index: -10;
 }
+
 #sec2::after,
 #sec2::before {
     position: absolute;
     content: "";
     top: 6vw;
 }
+
 #sec2::after {
     right: 30%;
 }
+
 #sec2::before {
     position: absolute;
     background: url(../img/tag2.png) no-repeat right;
     background-size: contain;
     width: 100%;
     height: 100%;
-    left: 0; top: -20vw;
+    left: 0;
+    top: -20vw;
 }
+
 #sec2::after {
     background: url(../img/tag3.png) no-repeat left;
     background-size: contain;
@@ -338,12 +377,14 @@ html, body {
     height: 100%;
     left: 0;
 }
+
 #sec2 h1 {
     font-family: 'GmarketSansLight';
     font-size: 34px;
 
     position: relative;
 }
+
 #sec2 h1::before {
     position: absolute;
     content: "";
@@ -351,7 +392,8 @@ html, body {
     background-size: contain;
     width: 100%;
     height: 250%;
-    left: 0%; top: -20%;
+    left: 0%;
+    top: -20%;
     z-index: -10;
 }
 
@@ -360,6 +402,7 @@ html, body {
 
     position: relative;
 }
+
 #sec2>p::after,
 #sec2>p::before {
     position: absolute;
@@ -372,13 +415,16 @@ html, body {
     height: 60%;
     left: 0;
 }
+
 #sec2>p::after {
     left: -25%;
 }
+
 #sec2>p::before {
     transform: scaleX(-1);
     left: 25%;
 }
+
 #sec2 .inner2 {
     position: relative;
     width: 80vw;
@@ -496,16 +542,20 @@ html, body {
 
     transition: .3s;
 }
+
 #sec2 .hov_inner.on .circle span:nth-of-type(1) {
     background-color: red;
 }
-#sec2 .hov_inner.on .circle span:nth-of-type(2){
+
+#sec2 .hov_inner.on .circle span:nth-of-type(2) {
     background-color: orange;
 }
-#sec2 .hov_inner.on .circle span:nth-of-type(3){
+
+#sec2 .hov_inner.on .circle span:nth-of-type(3) {
     background-color: gold;
 }
-#sec2 .hov_inner.on .circle span:nth-of-type(4){
+
+#sec2 .hov_inner.on .circle span:nth-of-type(4) {
     background-color: lightseagreen;
 }
 
@@ -550,7 +600,8 @@ html, body {
 
 #sec3 h1 {
     position: relative;
-    left: 50%; transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
     padding: 10px 0;
     border-bottom: 1px solid white;
@@ -638,6 +689,7 @@ html, body {
     padding-top: 50%;
     position: relative;
 }
+
 #sec4::after {
     position: absolute;
     content: "";
@@ -646,28 +698,33 @@ html, body {
     top: -20vw;
     background: url(../img/tag4.png) no-repeat top right;
 }
+
 #sec4 .inner4 {
     text-align: center;
     padding: 5vw 0;
 
     position: absolute;
     width: 100%;
-    top:0
+    top: 0
 }
+
 #sec4 .inner4 h1 {
     font-size: 50px;
 }
+
 .swiper-container {
     cursor: grab;
 }
+
 .tap_menu {
     display: flex;
     width: 60%;
     margin: auto;
 
     position: relative;
-    padding: 0vw ;
+    padding: 0vw;
 }
+
 .tap_menu .more {
     flex: 1;
 
@@ -677,9 +734,11 @@ html, body {
     text-align: right;
     z-index: 1;
 }
+
 .flower {
     margin-right: 30px;
 }
+
 .flower,
 .plant {
     cursor: pointer;
@@ -687,23 +746,27 @@ html, body {
     position: relative;
     z-index: 1;
 }
+
 .flower::after,
 .plant::after {
     position: absolute;
     content: "";
-    left: 50%; top: 50%;
-    transform: translate(-50%,-50%);
-    width: 50px; height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--sub-color1);
     z-index: -1;
 
     /* transition: .3s; */
 }
+
 .flower:hover::after,
 .plant:hover::after,
-.flower.on::after, .plant.on::after
-{
+.flower.on::after,
+.plant.on::after {
     background-color: var(--main-color3);
 }
 
@@ -717,23 +780,28 @@ html, body {
 
     opacity: 0;
 }
+
 .sec4_F_slide.on,
 .sec4_P_slide.on {
     opacity: 1;
     z-index: 10;
 }
+
 .item {
     position: relative;
     height: 100%;
 }
+
 .item>* {
     position: absolute;
     width: 100%;
 }
+
 .item.on {
     position: relative;
 
 }
+
 .item.on::before {
     position: absolute;
     content: "SALE";
@@ -742,6 +810,7 @@ html, body {
     font-size: 22px;
     color: var(--main-color1);
 }
+
 .item.on::after {
     position: absolute;
     content: "L";
@@ -759,21 +828,26 @@ html, body {
     font-weight: bold;
     color: var(--main-color1);
 }
+
 .item_img {
     /* border: 1px dotted red; */
     padding-top: 30vw;
     width: 100%;
     position: relative;
 }
+
 .item_img img {
-    left: 50%; bottom: 20%;
+    left: 50%;
+    bottom: 20%;
     transform: translateX(-50%);
     height: 50%;
     position: absolute;
 }
+
 .item_img.on img {
     height: 70%;
 }
+
 .item_img::before,
 .item_img::after {
     border-radius: 15px;
@@ -782,7 +856,7 @@ html, body {
     content: "";
     width: 10%;
     height: 10%;
-    
+
     transform: rotate(0deg);
 
     top: 30%;
@@ -793,6 +867,7 @@ html, body {
     opacity: 0;
     transition: .5s;
 }
+
 .item_img.on::before,
 .item_img.on::after {
     border-radius: 15px;
@@ -801,7 +876,7 @@ html, body {
     content: "";
     width: 60%;
     height: 60%;
-    
+
     transform: rotate(15deg);
 
     top: 12%;
@@ -822,15 +897,19 @@ html, body {
     bottom: 10%;
     font-size: 20px;
 }
-.item_detail,.item_detail2 {
+
+.item_detail,
+.item_detail2 {
     font-size: 20px;
     color: gray;
     bottom: 3%;
 }
+
 .item_detail2 {
     opacity: 0;
 }
-.item_detail2.on{
+
+.item_detail2.on {
     left: -23%;
     bottom: 3.5%;
     text-decoration: line-through;
@@ -838,6 +917,7 @@ html, body {
     color: rgb(175, 175, 175);
     opacity: 1;
 }
+
 .item_link {
     color: transparent;
     height: 100%;
@@ -845,6 +925,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 /* 섹션 4 끝 */
 /* 섹션 5 시작 */
 #sec5 {
@@ -856,6 +937,7 @@ html, body {
 
     position: relative;
 }
+
 #sec5::after,
 #sec5::before {
     position: absolute;
@@ -865,11 +947,13 @@ html, body {
     height: 100%;
     background-size: contain;
 }
+
 #sec5::before {
-    left: 0; 
+    left: 0;
     background: url(../img/tag5.png) no-repeat;
 
 }
+
 #sec5::after {
     right: 0;
     background: url(../img/tag5.png) no-repeat;
@@ -877,12 +961,14 @@ html, body {
 
 
 }
+
 #sec5 h1 {
     margin-top: 5vw;
     display: inline-block;
     font-size: 50px;
     position: relative;
 }
+
 #sec5 h1::after,
 #sec5 h1::before {
     position: absolute;
@@ -890,16 +976,19 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
 #sec5 h1::before {
     left: -70%;
     background: url(../img/flower.png) no-repeat center;
     background-size: contain;
 }
+
 #sec5 h1::after {
     right: -70%;
     background: url(../img/scissor.png) no-repeat center;
     background-size: contain;
 }
+
 #sec5 .inner5 {
     padding-top: 5vw;
     width: 80vw;
@@ -932,20 +1021,25 @@ html, body {
     top: 0;
     transform: translateX(-50%);
 }
+
 #sec5 figcaption .title {
     position: relative;
     padding: 10px 0;
 }
+
 #sec5 figcaption .title::after {
     position: absolute;
     content: "";
-    width: 100%; height: 100%;
-    left: 50%; top: 50%;
-    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background: url(../img/tape.png) no-repeat center;
     background-size: contain;
     z-index: -1;
 }
+
 #sec5 figcaption .img {
     border-radius: 15px;
     box-shadow: var(--main-color1);
