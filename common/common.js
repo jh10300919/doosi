@@ -45,10 +45,10 @@ $(() => {
   var swiper = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     loop: true,
     grabCursor: true,
@@ -108,12 +108,6 @@ $(() => {
       nextEl: '.swiper-button-next .btn1',
       prevEl: '.swiper-button-prev .btn1',
     },
-    breakpoints: {
-      1300: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      }
-    },
   });
 
   //섹션 4-2
@@ -130,25 +124,25 @@ $(() => {
       nextEl: '.swiper-button-next .btn1',
       prevEl: '.swiper-button-prev .btn1',
     },
-    breakpoints: {
-      1300: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      }
-    },
+    // breakpoints: {
+    //   1300: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 50,
+    //   }
+    // },
   });
 
 
   //섹션 4 가운데로 왔을 때 
 
   swiper2.on('slideChange', function () {
-    let center = swiper2.activeIndex + 2;
-    let pre = swiper2.previousIndex + 2;
+    let center1 = swiper2.activeIndex + 2;
+    let pre1 = swiper2.previousIndex + 2;
 
-    $('.item').eq(center).addClass('on');
-    $('.item').eq(center).children('.item_img').addClass('on');
-    $('.item').eq(pre).removeClass('on');
-    $('.item').eq(pre).children('.item_img').removeClass('on');
+    $('.sec4_F_slide .item').eq(center1).addClass('on');
+    $('.sec4_F_slide .item').eq(center1).children('.item_img').addClass('on');
+    $('.sec4_F_slide .item').eq(pre1).removeClass('on');
+    $('.sec4_F_slide .item').eq(pre1).children('.item_img').removeClass('on');
   });
 
   swiper3.on('slideChange', function () {
@@ -156,10 +150,10 @@ $(() => {
     let pre = swiper3.previousIndex + 2;
     // console.log('p', center);
 
-    $('.plant_item').eq(center).addClass('on');
-    $('.plant_item').eq(center).children('.item_img').addClass('on');
-    $('.plant_item').eq(pre).removeClass('on');
-    $('.plant_item').eq(pre).children('.item_img').removeClass('on');
+    $('.sec4_P_slide .item').eq(center).addClass('on');
+    $('.sec4_P_slide .item').eq(center).children('.item_img').addClass('on');
+    $('.sec4_P_slide .item').eq(pre).removeClass('on');
+    $('.sec4_P_slide .item').eq(pre).children('.item_img').removeClass('on');
   });
 
   // 서브 페이지 

@@ -293,7 +293,7 @@ body {
     left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    height: 40%;
+    height: 200px;
     width: 5%;
     white-space: nowrap;
     display: flex;
@@ -308,7 +308,9 @@ body {
     background: transparent;
     opacity: 1;
 }
-
+.swiper-pagination-bullet {
+    color: var(--main-color1);
+}
 .swiper-pagination-bullet-active:before {
     content: "-";
     position: absolute;
@@ -778,7 +780,6 @@ body {
 
 .item.on {
     position: relative;
-
 }
 
 .item.on::before {
@@ -822,7 +823,7 @@ body {
     height: 50%;
     position: absolute;
 }
-
+.sec4_P_slide .item_img.on,
 .item_img.on img {
     height: 70%;
 }
