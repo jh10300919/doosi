@@ -289,25 +289,16 @@ body {
 /* 섹션1 메인1 끝 */
 /* 왼쪽 도트 */
 #sec1 .swiper-pagination {
-    position: absolute;
     left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    height: 35%;
+    height: 40%;
+    width: 5%;
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    text-align: center;
-    transition: 300ms opacity;
-    z-index: 10;
-}
-
-.swiper-pagination {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
+    text-align: left;
 }
 
 .swiper-pagination-bullet {
@@ -318,22 +309,10 @@ body {
 }
 
 .swiper-pagination-bullet-active:before {
-    content: "";
-    display: block;
+    content: "ㅡ";
     position: absolute;
-    border-top: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid pink;
-    transition: all .5 ease-in-out;
-}
-
-#sec1 .swiper-slide {
-    opacity: 0;
-}
-
-#sec1 .swiper-slide.o {
-    opacity: 1;
+    left: -40%;
+    width: 25px;
 }
 
 /* 도트 끝 */
@@ -466,7 +445,6 @@ body {
 
 #sec2 .text p {
     opacity: 0;
-    /* transition: .3s; */
 }
 
 #sec2 .text.on p {
