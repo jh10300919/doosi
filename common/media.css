@@ -1,7 +1,7 @@
 @media (max-width:1350px) {
 
     /* 헤더부분 시작 */
-
+    .rotate,
     .side_sns,
     .side_dot,
     #sec2::before,
@@ -34,12 +34,6 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-    }
-
-    .gnb,
-    .top .logo::after,
-    .wrap_gnb {
-        /* border:1px solid red; */
     }
 
     header {
@@ -142,16 +136,18 @@
     }
 
     #sec1 figure {
-        border: 1px solid red;
         width: 80vw;
         min-width: 100vw;
     }
 
-    #sec1 .main0 figcaption .text {
-        border: 1px solid red;
-        width: 80vw;
+    #sec1 .main0 figcaption {
+        border: 3px solid cadetblue;
+        width: 100%;
     }
 
+    #sec1 .main0 figcaption .img {
+        border: 3px solid red;
+    }
 
 
 

@@ -93,9 +93,8 @@ body {
 }
 
 #sec1 .main0 figcaption .text {
-    width: 30vw;
+    width: 100vw;
     height: 70%;
-    white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -103,15 +102,16 @@ body {
 }
 
 #sec1 .main0 figcaption .text_1 {
-    font-size: 32px;
+    font-size: 2vw;
     padding: 5% 0;
 }
 
 #sec1 .main0 figcaption .text_2 {
-    font-size: 28px;
+    font-size: 1.5vw;
 }
 
 #sec1 .main0 figcaption .img {
+    border: 1px solid violet;
     width: 16vw;
     height: 70%;
     margin-left: 18%;
@@ -125,7 +125,14 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+@media (max-width:1350px) {
+    #sec1 .main0 figcaption .text_1 {
+        font-size: 5vw;
+    } 
+    #sec1 .main0 figcaption .text_2 {
+        font-size: 3vw;
+    }
+}
 /* 섹션1 메인0 끝 */
 
 /* 섹션1 메인1 시작 */
