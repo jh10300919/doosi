@@ -18,7 +18,8 @@
     #sec5::after,
     #sec5 h1::before,
     #sec5 h1::after,
-    #sec5 .title::after {
+    #sec5 .title::after,
+    .swiper-pagination {
         display: none;
     }
 
@@ -127,30 +128,18 @@
     /* 헤더부분 끝 */
     /* 섹션 1 시작 */
     #sec1 {
-        border: 3px solid black;
         padding: 0px;
-    }
-
-    #sec1 .swiper-container {
-        border: 2px solid blue;
     }
 
     #sec1 figure {
         width: 80vw;
-        min-width: 100vw;
+        min-width: 90vw;
+        margin: auto;
     }
 
-    #sec1 .main0 figcaption {
-        border: 3px solid cadetblue;
-        width: 100%;
+    #sec1 .main1 {
+        height: 80vw;
     }
-
-    #sec1 .main0 figcaption .img {
-        border: 3px solid red;
-    }
-
-
-
 
 
     /* 섹션 1 끝 */
@@ -177,7 +166,7 @@
     }
 
     #sec2 .inner2 {
-        border: 3px soldi green;
+        border: 3px solid green;
     }
 
     #sec2 .inner2 .hover {
@@ -193,7 +182,6 @@
     }
 
     #sec2 .text {
-        border: 1px solid red;
         position: absolute;
         font-size: 20px;
         right: 0;

@@ -82,18 +82,21 @@ body {
     }
 }
 
-#sec1 .main0 figcaption {
-    height: 100%;
-    margin: auto;
+#sec1 .main0 {
+    height: 25vw;
+}
 
+#sec1 .main0 figcaption {
+    height: 130%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: right;
+    justify-content: flex-end;
+    background-color: white;
 }
 
 #sec1 .main0 figcaption .text {
-    width: 100vw;
+    /* width: 100vw; */
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -111,11 +114,12 @@ body {
 }
 
 #sec1 .main0 figcaption .img {
-    border: 1px solid violet;
-    width: 16vw;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 15vw;
     height: 70%;
     margin-left: 18%;
-    position: relative;
 }
 
 #sec1 .main0 figcaption .img img {
@@ -126,11 +130,33 @@ body {
     transform: translate(-50%, -50%);
 }
 @media (max-width:1350px) {
+    #sec1 {
+        padding: 0px;
+    }
+    #sec1 .main0 {
+        height: 100%;
+    }
+    #sec1 .main0 figcaption {
+        position: relative;
+        height: 80vw;
+    }
     #sec1 .main0 figcaption .text_1 {
         font-size: 5vw;
     } 
     #sec1 .main0 figcaption .text_2 {
         font-size: 3vw;
+    }
+    #sec1 .main0 figcaption .img {
+        width: 35vw;
+        position: absolute;
+        bottom: 0;
+    }
+    #sec1 .main0 figcaption .img img {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%,-50%);
     }
 }
 /* 섹션1 메인0 끝 */
@@ -179,13 +205,29 @@ body {
 }
 
 .main1 figcaption .text p:nth-child(1) {
-    font-size: 20px;
+    font-size: 1.2vw;
+}
+.main1 figcaption .text p:nth-child(2) {
+    font-size: 1.6vw;
 }
 
 .main1 figcaption .text p:nth-child(3) {
-    font-size: 58px;
+    font-size: 2.5vw;
+    white-space: nowrap;
 }
-
+@media (max-width:1350px) {
+    .main1 figcaption .text p:nth-child(1) {
+        font-size: 2.8vw;
+    }
+    .main1 figcaption .text p:nth-child(2) {
+        font-size: 5vw;
+    }
+    
+    .main1 figcaption .text p:nth-child(3) {
+        font-size: 8vw;
+        white-space: nowrap;
+    }
+}
 .main1 figcaption .img {
     margin-left: 2vw;
     width: 40vh;
@@ -430,7 +472,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    border: 10x solid red;
 }
 
 #sec2 .inner2 .hover .hov {

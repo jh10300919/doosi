@@ -41,7 +41,7 @@ $(() => {
   })
 
   // 섹션 1 메인 슬라이드
-  var bullet = ['두시', '명화', '프로방스','도시','자연'];
+  var bullet = ['두시', '명화', '프로방스', '도시', '자연'];
   var swiper = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     centeredSlides: true,
