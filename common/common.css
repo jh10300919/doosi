@@ -368,17 +368,44 @@ body {
     min-height: 30px;
     background: transparent;
     opacity: 1;
-}
-.swiper-pagination-bullet {
     color: var(--main-color1);
 }
+
 .swiper-pagination-bullet-active:before {
     content: "-";
     position: absolute;
     left: -40%;
     width: 25px;
 }
-
+.swiper-pagination-bullet-active {
+    /* border: 1px solid red; */
+    position: relative;
+}
+@media (max-width:1350px) {
+    #sec1 .swiper-pagination {
+        flex-direction: row;
+        top: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3vw;
+        width: 50vw;
+        height: 3vw;
+    }
+   
+    .swiper-pagination-bullet-active:before {
+        content: "";
+        position: absolute;
+        border: transparent;
+    }
+    .swiper-pagination-bullet-active::after {
+        position: absolute;
+        content: "";
+        background-color: rgba(253, 220, 128, 0.24);
+        width: 5vw;
+        height: 3vw;
+        left: 0;
+    }
+}
 /* 도트 끝 */
 /* 섹션 2 시작 */
 #sec2 {

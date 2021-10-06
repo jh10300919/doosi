@@ -48,13 +48,13 @@ $(() => {
 
   // 섹션 1 메인 슬라이드
   var bullet = ['두시', '명화', '프로방스', '도시', '자연'];
-  var swiper = new Swiper(".mySwiper1", {
+  var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     loop: true,
     grabCursor: true,
