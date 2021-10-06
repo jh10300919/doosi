@@ -49,27 +49,37 @@ body {
     right: 20%;
     width: 10%;
     bottom: 6vh;
-    height: 5vw;
 }
-
 .rotate p {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    z-index: 1;
 }
-
-.rotate p img {
-    width: 100%
+.logo_center,
+.logo_rotate {
+    border: 1px solid blue;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
-
-.rotate .logo_center {
-    width: 45%;
+.logo_center img,
+.logo_rotate img {
+    border: 1px solid red;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 3vw;
+}
+.logo_rotate img {
+    border: 1px solid green;
+    width: 5vw;
+    left: 0;
 }
 
 .rotate .logo_rotate img {
     animation: rotate infinite linear 50s;
+    transform-origin: center center;
 }
 
 @keyframes rotate {

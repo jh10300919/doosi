@@ -1,6 +1,12 @@
 $(() => {
 
-  //사이드 슬라이드 도트 색
+  // 햄버거 버튼
+  $('.wrap_gnb').click(function(){
+    $('.wrap_gnb').toggleClass('on')
+    $('.gnb').toggleClass('on')
+  })
+
+  // 사이드 슬라이드 도트 색
   $('.side_dot a').eq(0).addClass('on');
   $('.side_dot a').click(function () {
     $('.side_dot a').removeClass('on');
