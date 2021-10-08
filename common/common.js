@@ -51,10 +51,10 @@ $(() => {
   var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     effect: "fade",
     loop: true,
     grabCursor: true,
