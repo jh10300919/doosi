@@ -19,6 +19,17 @@
 <script>
     $(() => {
         $('#headers').load('header.html')
+
+        $('.sec2>article>p').eq(0).addClass('on')
+        $('.sec2>article>p').next().eq(0).addClass('on')
+
+        $('.sec2 .title').mouseenter(function () {
+            $('.sec2 .title').removeClass('on')
+            $('.sec2 .title').next().removeClass('on')
+
+            $(this).addClass('on')
+            $(this).next().addClass('on')
+        })
     })
 </script>
 
@@ -56,22 +67,22 @@
                     <div class="sub_sub">
                         <div>
                             <p>1회차</p>
-                            <div class="img"><img src=".//img/sub/sub_1-1.jpg" alt="작은이미지1"></div>
+                            <div class="img"><img src="./img/sub/sub_1-1.jpg" alt="작은이미지1"></div>
                             <p>클로드 모네</p>
                         </div>
                         <div>
                             <p>2회차</p>
-                            <div class="img"><img src=".//img/sub/sub_1-2.jpg" alt="작은이미지2"></div>
+                            <div class="img"><img src="./img/sub/sub_1-2.jpg" alt="작은이미지2"></div>
                             <p>빈센트 반 고흐</p>
                         </div>
                         <div>
                             <p>3회차</p>
-                            <div class="img"><img src=".//img/sub/sub_1-3.jpg" alt="작은이미지3"></div>
+                            <div class="img"><img src="./img/sub/sub_1-3.jpg" alt="작은이미지3"></div>
                             <p>폴 고갱</p>
                         </div>
                         <div>
                             <p>4회차</p>
-                            <div class="img"><img src=".//img/sub/sub_1-4.jpg" alt="작은이미지4"></div>
+                            <div class="img"><img src="./img/sub/sub_1-4.jpg" alt="작은이미지4"></div>
                             <p>프리다 칼로</p>
                         </div>
                     </div>
@@ -87,7 +98,8 @@
                         <div class="img"><img src="./img/sub/sub2.jpg" alt="명화이미지"></div>
                         <div class="text">
                             <p>프로방스</p>
-                            <p>여리하고 하늘거리는 감성과<br>파스텔 색감을 좋아하시나요?<br><br>프랑스와 이탈리아의 경계에 있는 해변의 감성을 전합니다.<br><br>뜨거운 햇볕에 반짝이는 바다,<br>프렌치한 무드까지 가득 담았습니다.<br></p>
+                            <p>여리하고 하늘거리는 감성과<br>파스텔 색감을 좋아하시나요?<br><br>프랑스와 이탈리아의 경계에 있는 해변의 감성을 전합니다.<br><br>뜨거운 햇볕에
+                                반짝이는 바다,<br>프렌치한 무드까지 가득 담았습니다.<br></p>
                         </div>
                         <div class="link"><a href="#">자세히 보기 ></a></div>
                     </div>
@@ -95,22 +107,22 @@
                     <div class="sub_sub">
                         <div>
                             <p>1회차</p>
-                            <div class="img"><img src=".//img/sub/sub_2-1.jpg" alt="작은이미지1"></div>
+                            <div class="img"><img src="./img/sub/sub_2-1.jpg" alt="작은이미지1"></div>
                             <p>지중해</p>
                         </div>
                         <div>
                             <p>2회차</p>
-                            <div class="img"><img src=".//img/sub/sub_2-2.jpg" alt="작은이미지2"></div>
+                            <div class="img"><img src="./img/sub/sub_2-2.jpg" alt="작은이미지2"></div>
                             <p>프렌치</p>
                         </div>
                         <div>
                             <p>3회차</p>
-                            <div class="img"><img src=".//img/sub/sub_2-3.jpg" alt="작은이미지3"></div>
+                            <div class="img"><img src="./img/sub/sub_2-3.jpg" alt="작은이미지3"></div>
                             <p>그리너리</p>
                         </div>
                         <div>
                             <p>4회차</p>
-                            <div class="img"><img src=".//img/sub/sub_2-4.jpg" alt="작은이미지4"></div>
+                            <div class="img"><img src="./img/sub/sub_2-4.jpg" alt="작은이미지4"></div>
                             <p>트렌디</p>
                         </div>
                     </div>
@@ -133,22 +145,22 @@
                     <div class="sub_sub">
                         <div>
                             <p>1회차</p>
-                            <div class="img"><img src=".//img/sub/sub_3-1.jpg" alt="작은이미지1"></div>
+                            <div class="img"><img src="./img/sub/sub_3-1.jpg" alt="작은이미지1"></div>
                             <p>뉴욕</p>
                         </div>
                         <div>
                             <p>2회차</p>
-                            <div class="img"><img src=".//img/sub/sub_3-2.jpg" alt="작은이미지2"></div>
+                            <div class="img"><img src="./img/sub/sub_3-2.jpg" alt="작은이미지2"></div>
                             <p>파리</p>
                         </div>
                         <div>
                             <p>3회차</p>
-                            <div class="img"><img src=".//img/sub/sub_3-3.jpg" alt="작은이미지3"></div>
+                            <div class="img"><img src="./img/sub/sub_3-3.jpg" alt="작은이미지3"></div>
                             <p>시드니</p>
                         </div>
                         <div>
                             <p>4회차</p>
-                            <div class="img"><img src=".//img/sub/sub_3-4.jpg" alt="작은이미지4"></div>
+                            <div class="img"><img src="./img/sub/sub_3-4.jpg" alt="작은이미지4"></div>
                             <p>제주</p>
                         </div>
                     </div>
@@ -171,22 +183,22 @@
                     <div class="sub_sub">
                         <div>
                             <p>1회차</p>
-                            <div class="img"><img src=".//img/sub/sub_4-1.jpg" alt="작은이미지1"></div>
+                            <div class="img"><img src="./img/sub/sub_4-1.jpg" alt="작은이미지1"></div>
                             <p>들판</p>
                         </div>
                         <div>
                             <p>2회차</p>
-                            <div class="img"><img src=".//img/sub/sub_4-2.jpg" alt="작은이미지2"></div>
+                            <div class="img"><img src="./img/sub/sub_4-2.jpg" alt="작은이미지2"></div>
                             <p>바다</p>
                         </div>
                         <div>
                             <p>3회차</p>
-                            <div class="img"><img src=".//img/sub/sub_4-3.jpg" alt="작은이미지3"></div>
+                            <div class="img"><img src="./img/sub/sub_4-3.jpg" alt="작은이미지3"></div>
                             <p>숲</p>
                         </div>
                         <div>
                             <p>4회차</p>
-                            <div class="img"><img src=".//img/sub/sub_4-4.jpg" alt="작은이미지4"></div>
+                            <div class="img"><img src="./img/sub/sub_4-4.jpg" alt="작은이미지4"></div>
                             <p>석양</p>
                         </div>
                     </div>

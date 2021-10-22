@@ -51,10 +51,10 @@ $(() => {
   var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     effect: "fade",
     loop: true,
     grabCursor: true,
@@ -110,10 +110,10 @@ $(() => {
       delay: 2500,
       disableOnInteraction: false,
     },
-    navigation: {
-      nextEl: '.swiper-button-next .btn1',
-      prevEl: '.swiper-button-prev .btn1',
-    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next .btn1',
+    //   prevEl: '.swiper-button-prev .btn1',
+    // },
   });
 
   //섹션 4-2
@@ -126,16 +126,16 @@ $(() => {
       delay: 2500,
       disableOnInteraction: false,
     },
-    navigation: {
-      nextEl: '.swiper-button-next .btn1',
-      prevEl: '.swiper-button-prev .btn1',
-    },
-    // breakpoints: {
-    //   1300: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 50,
-    //   }
+    // navigation: {
+    //   nextEl: '.swiper-button-next .btn1',
+    //   prevEl: '.swiper-button-prev .btn1',
     // },
+    breakpoints: {
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      }
+    },
   });
 
 
@@ -164,14 +164,5 @@ $(() => {
 
   // 서브 페이지 
 
-  $('.sec2>article>p').eq(0).addClass('on')
-  $('.sec2>article>p').next().eq(0).addClass('on')
-
-  $('.sec2 .title').mouseenter(function () {
-    $('.sec2 .title').removeClass('on')
-    $('.sec2 .title').next().removeClass('on')
-
-    $(this).addClass('on')
-    $(this).next().addClass('on')
-  })
+  
 })

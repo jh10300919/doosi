@@ -170,7 +170,6 @@
 
     #sec2 .inner2 {
         border: 1px solid green;
-        height: 100vh;
     }
 
     #sec2 .inner2 .hover {
@@ -181,7 +180,7 @@
 
     #sec2 .inner2 .hover .hov {
         border: 1px dotted blue;
-        /* position: relative; */
+        margin: 1vw 0;
     }
 
     #sec2 .text {
